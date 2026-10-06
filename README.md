@@ -4,7 +4,7 @@ Imran Zaidi (Montréal, Québec, Canada), imran.zaidi@gmail.com. 6 October 2026.
 
 - Paper: [rm-reciprocity.pdf](rm-reciprocity.pdf) (58 pages)
 - LaTeX source: [source/](source/) (compiles with pdflatex; amsart)
-- SHA-256 of the PDF: `50a97fa087f7ff12722643de11d4f5c5f4ee1417e3bb9399edff5c0f2fa165d7`
+- SHA-256 of the PDF: `16678636ce1d6220a2b5e549ed780763fddfe6579c119a4c0e1395a5c8544c28`
 
 ## Abstract
 

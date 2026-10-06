@@ -179,7 +179,7 @@ which is what a reciprocity law predicts for $\Frob_{\mathfrak p}$ acting by $I\
 
 \emph{Exact root extraction} (Section~\ref{sec:root}). The family is built from a power $\gamma^{k_0}$, and a congruence between $k_0$-th powers would lose a root of unity. The root is therefore taken among positive reals, before reduction, through an exact orbit-product identity. This gives the \emph{Frobenius congruence} with two candidates, $\mathfrak p$ and $\bar{\mathfrak p}$; nothing local chooses between them.
 
-\emph{Chebotarev and selection} (Section~\ref{sec:rec}). Chebotarev's theorem turns the congruences into exact statements about Galois elements, still with two candidates. The choice is forced by two global symmetries: reality at the analytic place~$r$, and the homothety law, whose negative-norm case is a new identity (Theorem~\ref{thm:DC}). This proves Theorem~\ref{thm:A}.
+\emph{Chebotarev and selection} (Section~\ref{sec:rec}). Chebotarev's theorem turns the congruences into exact statements about Galois elements, still with two candidates. The choice is forced by two global symmetries: reality at the analytic place~$r$, and the homothety law, whose negative-norm case rests on the covariance of the values under matrices of determinant $-1$ (Theorem~\ref{thm:DC}, which corresponds to Kopp's covariance theorem~\cite[Thm.~4.37]{Ko}). This proves Theorem~\ref{thm:A}.
 
 The other theorems of Part~A follow quickly. Theorem~\ref{thm:D} combines Theorem~\ref{thm:A} at the bad primes with the local argument. Theorem~\ref{thm:C} needs one Galois conjugate of the values on the unit circle, which the Galois form of Theorem~\ref{thm:A} supplies, and Radchenko and Wheeler's quadratic relation. Theorem~\ref{thm:B} needs in addition the nonvanishing property~\eqref{eq:N}. Theorem~\ref{thm:G} comes from the same local machinery at a second family of primes.
 
@@ -247,7 +247,7 @@ for every coset \(y+T\), with \(\kappa_T=\mu_\gamma^p/\mu_{\gamma_T}\in\mu_{24}\
 \item[(vii)] \emph{Covariance, finiteness, \(\varepsilon\)-invariance.} If \(g\in\mathrm{SL}_2(\mathbb Z)\), \(j(g,\tau^*)>0\) and \(\gamma'=g\gamma g^{-1}\) is admissible, then \(E_{\gamma'}(\mathbf ug^{-1})=(\mu_{\gamma'}/\mu_\gamma)E_\gamma(\mathbf u)\). The values of all admissible matrices of a given trace form a finite set. Finally, \(E_{\gamma^k}(\mathbf u\gamma)=E_{\gamma^k}(\mathbf u)\) on \(G_{\gamma^k}\).
 \item[(viii)] \emph{Homothety law.} \(W(\beta I,\varepsilon,\beta z)=W(I,\varepsilon,z)^{\operatorname{sgn}\beta_u}\) for \(\beta\in K^\times\).
 \item[(ix)] \emph{Gaussian under odd changes.} For a sibling along \(T\) of odd prime order \(p\), with row-label map \(M_T\) (so \(\gamma M_T=M_T\gamma_T\) and \(\det M_T=p\)), one has \(q_{\gamma_T}(xM_T)=q_\gamma(x)^p\); for \(\pi\in\mathbb Z[\varepsilon]\) of odd norm, \(q(\pi x)=q(x)^{\mathrm{Nm}\,\pi}\). Both statements follow from~\cite[(3)]{RW} and \(q(nx)=q(x)^{n^2}\). At \(p=2\), or for even norm, a sign \(-1\) can appear; those cases are not used.
-\item[(x)] \emph{Covariance under determinant \(-1\)} (Theorem~\ref{thm:DC} in Section~\ref{sec:sign}): the analogue of (vii) for \(\det g=-1\) and \(j(g,\tau^*)<0\), with complex conjugation.
+\item[(x)] \emph{Covariance under determinant \(-1\)} (Theorem~\ref{thm:DC} in Section~\ref{sec:sign}; compare Kopp~\cite[Thm.~4.37]{Ko}): the analogue of (vii) for \(\det g=-1\) and \(j(g,\tau^*)<0\), with complex conjugation.
 \end{enumerate}
 
 \subsubsection*{Sources}
@@ -280,6 +280,8 @@ For the right side of~\eqref{eq:star} to depend only on the class of \(s\) modul
 Let \(\gamma\) be admissible, let \(g\in\mathrm{GL}_2(\mathbb Z)\) with \(\det g=-1\) be such that \(\gamma':=g\gamma g^{-1}\) is admissible, and suppose that \(j_g:=j(g,\tau^*)<0\). Then
 \[E_{\gamma'}(\mathbf ug^{-1})=\mu_\gamma\mu_{\gamma'}\,\overline{E_\gamma(\mathbf u)}\quad(\mathbf u\ne0),\qquad E_{\gamma'}(0)=E_\gamma(0)=\varepsilon^{1/2}.\]
 \end{lthm}
+
+Under the identification of Appendix~\ref{app:kopp}, Theorem~\ref{thm:DC} corresponds to the case $\det R=-1$ of Kopp's covariance theorem for the real multiplication values of his Shintani--Faddeev cocycle~\cite[Thm.~4.37]{Ko}. We give a direct proof from Radchenko and Wheeler's cocycle relation and reflection formula.
 
 The statement uses four elementary facts, which hold as for \(\mathrm{SL}_2(\mathbb Z)\).
 
@@ -1645,7 +1647,7 @@ Each main statement uses the following inputs, directly or through earlier state
 \subsection*{What is new}
 The following are new.
 \begin{itemize}
-\item Part~A: Lemma~\ref{lem:FX} (a transport of the results of~\cite{RW}); Theorems~\ref{thm:DC} and~\ref{thm:sign}; the local theory of Section~\ref{sec:local}, beyond the classical facts on lattices and the tree; Lemmas~\ref{lem:dist}--\ref{lem:selector} and Theorem~\ref{thm:RL}; Theorems~\ref{thm:A}, \ref{thm:D} and~\ref{thm:G}; the indexing of Section~\ref{sec:h12}, which turns~\cite[Cor.~5.2.5(1)]{Ya08} into Proposition~\ref{prop:N}, and the reading of Shintani's two factors as the two place values of one datum; the assembly of Theorem~\ref{thm:C}.
+\item Part~A: Lemma~\ref{lem:FX} (a transport of the results of~\cite{RW}); Theorem~\ref{thm:sign}, and a direct proof of Theorem~\ref{thm:DC}, which corresponds to Kopp's covariance theorem~\cite[Thm.~4.37]{Ko}; the local theory of Section~\ref{sec:local}, beyond the classical facts on lattices and the tree; Lemmas~\ref{lem:dist}--\ref{lem:selector} and Theorem~\ref{thm:RL}; Theorems~\ref{thm:A}, \ref{thm:D} and~\ref{thm:G}; the indexing of Section~\ref{sec:h12}, which turns~\cite[Cor.~5.2.5(1)]{Ya08} into Proposition~\ref{prop:N}, and the reading of Shintani's two factors as the two place values of one datum; the assembly of Theorem~\ref{thm:C}.
 \item Part~B: Theorems~\ref{thm:dict}, \ref{thm:phase} and~\ref{thm:sqrtrec} and the assembly of Theorem~\ref{thm:E}; for (St3) in the open configuration, the application of Radchenko and Wheeler's contour method to the half step with the $A$-kernel, the square-class law and the order change; the root-law arguments of Section~\ref{sec:rootlaw}.
 \item Appendix~\ref{app:kopp}: the translation and case analysis.
 \end{itemize}

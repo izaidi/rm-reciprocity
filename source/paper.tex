@@ -192,9 +192,9 @@ The other theorems of Part~A follow quickly. Theorem~\ref{thm:D} combines Theore
 \label{fig:deps}
 \end{figure}
 
-No Stark conjecture, no Shimura reciprocity and no moduli interpretation of real multiplication points enter the proof of Theorem~\ref{thm:A}, and the values are never assumed to be algebraic or integral. Section~\ref{sec:inputs} lists what is new and what is imported.
+No Stark conjecture, no Shimura reciprocity and no moduli interpretation of real multiplication points enter the proof of Theorem~\ref{thm:A}, and the values are never assumed to be algebraic or integral. Appendix~\ref{sec:inputs} lists what is new and what is imported.
 
-Section~\ref{sec:values} defines the values and lists the identities we use. Section~\ref{sec:partA} proves Theorems~\ref{thm:A}--\ref{thm:G}, and Section~\ref{sec:partB} proves Theorems~\ref{thm:E} and~\ref{thm:F}. Section~\ref{sec:inputs} lists the imported results and what each theorem depends on, and Section~\ref{sec:verif} describes how the argument has been checked. This work was carried out with substantial assistance from AI systems, and all review of it so far has been by AI agents (Section~\ref{sec:verif}).
+Section~\ref{sec:values} defines the values and lists the identities we use. Section~\ref{sec:partA} proves Theorems~\ref{thm:A}--\ref{thm:G}, and Section~\ref{sec:partB} proves Theorems~\ref{thm:E} and~\ref{thm:F}. Section~\ref{sec:verif} describes how the argument has been checked, and Appendix~\ref{sec:inputs} lists the imported results and what each theorem depends on. This work was carried out with substantial assistance from AI systems, and all review of it so far has been by AI agents (Section~\ref{sec:verif}).
 
 \section{The values and the identities they satisfy}\label{sec:values}
 
@@ -1512,60 +1512,6 @@ Let \(O_K=\mathbb Z[\eta]\). Since \(\mathfrak m\) is odd and \(\eta\equiv1\ (\m
 
 Here (St3) holds by Theorem~\ref{thm:st3}, but the root law is open. The identity (W) is proved only on \(\mathbb Z[\eta]\), which is not an \(O_K\)-lattice, and the dyadic method has no analogue: \((\eta-1)\) and \((\eta+1)\) share the dyadic primes, the reduction of \(M\) modulo \(2\) collapses to \(0\), and Fourier inversion on \(B\) modulo \(2\) fails because \(|B|\) is even.
 
-\section{Inputs and dependencies}\label{sec:inputs}
-
-Results of other authors are cited where they are used. Where we re-checked a proof or found a misprint, this is recorded in Section~\ref{sec:verif} and Appendix~\ref{app:misprints}.
-
-\subsection*{Imported results}
-\begin{itemize}
-\item \emph{Radchenko and Wheeler~\cite{RW}:}
-\begin{itemize}
-\item definitions: (1)--(4) and~(37);
-\item the four hypotheses of Section~\ref{sec:results}: (6) rests on~\cite[Thm.~3, (22)]{RW} and (7) on~\cite[Thm.~3, (23)]{RW}, while (39) is proved in~\cite{RW} from~(36), (38) and~(5);
-\item for the root law (Theorem~\ref{thm:F}): (7) at three families of pairs, (36) modulo~$2$ and on the slice $\{2c\}\times B$, the identity in the proof of~\cite[Thm.~10]{RW}, and~(6) with $\lambda=\mu_\gamma$;
-\item for Section~\ref{sec:values}: the results listed there, with~(9), (16), (19) and~(20), for identities (i)--(v), (vii), Lemma~\ref{lem:FX} and Theorem~\ref{thm:DC} (all of which we have re-derived from their definitions);
-\item for Theorem~\ref{thm:st3}: (13), \cite[Lemma~2]{RW} and~\cite[Prop.~1]{RW};
-\item for Section~\ref{sec:h12} and Theorem~\ref{thm:phase}: \cite[Props.~3, 4, 5]{RW}.
-\end{itemize}
-\item \emph{Shintani and Yamamoto:} \cite[Props.~3, 5]{Sh}, in Yamamoto's form~\cite[Thm.~5.1.1]{Ya08} (boundary case~\cite[Thms.~3.5, 4.10]{Ya10}), with~\cite[Thm.~5.2.3, Cor.~5.2.5(1)]{Ya08}, for Proposition~\ref{prop:N} and Theorem~\ref{thm:dict}; \cite{Sh76} for Theorem~\ref{thm:phase} and, through it, Theorem~\ref{thm:F}.
-\item \emph{Classical:} Rademacher's formula~\cite{RG}, which gives $\mu_\gamma=1$ for the matrix of $\eta^2$ on $\mathbb Z[\eta]$ and is used by Theorem~\ref{thm:st3} for every $t$; Faddeev's unitarity of $\Phi_S$ at real arguments~\cite{Fa95}; class field theory; Chebotarev's theorem~\cite{Ch}; Hecke $L$-functions ($L(1,\chi)\ne0$, the functional equation, root numbers, orders at $s=0$); \cite[Ch.~IV]{Ta} and~\cite{Ru}; the conductor--discriminant formula, Gauss sums, Milgram's formula and Lucas's theorem; valuation rings; lattices over $\mathbb Z_p$, their multiplier rings and the Bruhat--Tits tree~\cite{Se}.
-\item \emph{Appendix~\ref{app:kopp} only:} \cite[Thm.~1.1]{Ko} (a preprint), modulus only.
-\end{itemize}
-
-\subsection*{Dependencies}
-The table records which of the inputs each main statement uses, directly or through earlier statements. The columns are identity~(6) of~\cite{RW}; (7) or~(36); (39); (I1); Theorem~\ref{thm:DC}; Shintani's formula in Yamamoto's form (Sh--Ya); Shintani's evaluation at $s=0$~\cite{Sh76}; Rademacher's formula (Rad.); Chebotarev's theorem and class field theory (Cheb.).
-\begin{center}
-\small
-\renewcommand{\arraystretch}{1.15}
-\begin{tabular}{lccccccccc}
-\hline
- & (6) & (7), (36) & (39) & (I1) & DC & Sh--Ya & \cite{Sh76} & Rad. & Cheb.\\
-\hline
-Thm.~\ref{thm:A} & yes & & & & yes$^1$ & & & & yes\\
-Thm.~\ref{thm:B} & yes & & & & yes & yes & & & yes\\
-Thm.~\ref{thm:C} & yes & via (39) & yes & & & & & & yes\\
-Thm.~\ref{thm:D} & yes & & & & yes & & & & yes\\
-Thm.~\ref{thm:G} & yes & & & & yes & & & & yes\\
-Thm.~\ref{thm:local} & yes$^2$ & & & & & & & & \\
-Thm.~\ref{thm:dict} & & & & & yes & yes & & & \\
-Thm.~\ref{thm:phase} & & & & & & yes & yes & & \\
-Thm.~\ref{thm:sqrtrec} & yes & & & & yes & yes$^3$ & & & yes\\
-Thm.~\ref{thm:st3} & yes & & & yes & yes & yes & & yes & yes\\
-Thm.~\ref{thm:E} & yes & & & yes$^4$ & yes & yes & & yes$^4$ & yes\\
-Thm.~\ref{thm:F} & yes & yes$^5$ & & yes & yes & yes & yes & yes & yes\\
-\hline
-\end{tabular}
-\end{center}
-{\small $^1$ Once, in the selection step; not for the rational ideles, the Galois form or the positivity above $r$. $^2$ Only through Lemma~\ref{lem:column}. $^3$ Through~\eqref{eq:V}, for the clause on $U_A$. $^4$ In the open configuration only. $^5$ For $t$ odd, (7) at three families of pairs; for $f_\eta=1$, (36) on the slice $\{2c\}\times B$.\par}
-
-\subsection*{What is new}
-The following are new.
-\begin{itemize}
-\item Part~A: Lemma~\ref{lem:FX} (a transport of the results of~\cite{RW}); Theorems~\ref{thm:DC} and~\ref{thm:sign}; the local theory of Section~\ref{sec:local}, beyond the classical facts on lattices and the tree; Lemmas~\ref{lem:dist}--\ref{lem:selector} and Theorem~\ref{thm:RL}; Theorems~\ref{thm:A}, \ref{thm:D} and~\ref{thm:G}; the indexing of Section~\ref{sec:h12}, which turns~\cite[Cor.~5.2.5(1)]{Ya08} into Proposition~\ref{prop:N}, and the reading of Shintani's two factors as the two place values of one datum; the assembly of Theorem~\ref{thm:C}.
-\item Part~B: Theorems~\ref{thm:dict}, \ref{thm:phase} and~\ref{thm:sqrtrec} and the assembly of Theorem~\ref{thm:E}; for (St3) in the open configuration, the application of Radchenko and Wheeler's contour method to the half step with the $A$-kernel, the square-class law and the order change; the root-law arguments of Section~\ref{sec:rootlaw}.
-\item Appendix~\ref{app:kopp}: the translation and case analysis.
-\end{itemize}
-
 \section{Verification}\label{sec:verif}
 
 \subsection*{Review}
@@ -1658,6 +1604,50 @@ The following misprints occur in the sources we use. None of them affects a stat
 \item In \cite{Ya08} (arXiv:math/0602615v1), in the auxiliary display in the proof of Theorem~5.1.1, the term $+B_1(y_k)\log\omega_{k+1}$ should read $-B_1(y_k)\log\omega_{k+1}$. Yamamoto's theorem is unaffected. We have not checked whether the journal version corrects the display.
 \item In \cite{RW}, the origin clause $F^\pm(0):=\varepsilon^{\pm1/2}$ of their definition~(2) is right only for $\varepsilon>1$. At the repelling point only their~(4) holds, and their identities (6) and (7) fail with the literal~(2). In \cite[Thm.~3]{RW}, ``$\tau\in\mathbb R_{>0}$'' should read $c\tau+d>0$. Theorem~7 of \cite{RW} leaves the sign convention of the Heisenberg operators unspecified, and their identity~(39) fails with $q\mapsto q^{-1}$; Section~\ref{sec:sic} fixes the convention through the choice of $D_{ij}$ and $\theta$.
 \item In \cite{Ko}, the sentence after display~(8.6) in the proof of Theorem~8.2 has the $t=1$ sign pattern reversed. Kopp's Theorem~1.1 is unaffected.
+\end{itemize}
+
+\section{Inputs and dependencies}\label{sec:inputs}
+
+Results of other authors are cited where they are used. Where we re-checked a proof or found a misprint, this is recorded in Section~\ref{sec:verif} and Appendix~\ref{app:misprints}.
+
+\subsection*{Imported results}
+\begin{itemize}
+\item \emph{Radchenko and Wheeler~\cite{RW}:}
+\begin{itemize}
+\item definitions: (1)--(4) and~(37);
+\item the four hypotheses of Section~\ref{sec:results}: (6) rests on~\cite[Thm.~3, (22)]{RW} and (7) on~\cite[Thm.~3, (23)]{RW}, while (39) is proved in~\cite{RW} from~(36), (38) and~(5);
+\item for the root law (Theorem~\ref{thm:F}): (7) at three families of pairs, (36) modulo~$2$ and on the slice $\{2c\}\times B$, the identity in the proof of~\cite[Thm.~10]{RW}, and~(6) with $\lambda=\mu_\gamma$;
+\item for Section~\ref{sec:values}: the results listed there, with~(9), (16), (19) and~(20), for identities (i)--(v), (vii), Lemma~\ref{lem:FX} and Theorem~\ref{thm:DC} (all of which we have re-derived from their definitions);
+\item for Theorem~\ref{thm:st3}: (13), \cite[Lemma~2]{RW} and~\cite[Prop.~1]{RW};
+\item for Section~\ref{sec:h12} and Theorem~\ref{thm:phase}: \cite[Props.~3, 4, 5]{RW}.
+\end{itemize}
+\item \emph{Shintani and Yamamoto:} \cite[Props.~3, 5]{Sh}, in Yamamoto's form~\cite[Thm.~5.1.1]{Ya08} (boundary case~\cite[Thms.~3.5, 4.10]{Ya10}), with~\cite[Thm.~5.2.3, Cor.~5.2.5(1)]{Ya08}, for Proposition~\ref{prop:N} and Theorem~\ref{thm:dict}; \cite{Sh76} for Theorem~\ref{thm:phase} and, through it, Theorem~\ref{thm:F}.
+\item \emph{Classical:} Rademacher's formula~\cite{RG}, which gives $\mu_\gamma=1$ for the matrix of $\eta^2$ on $\mathbb Z[\eta]$ and is used by Theorem~\ref{thm:st3} for every $t$; Faddeev's unitarity of $\Phi_S$ at real arguments~\cite{Fa95}; class field theory; Chebotarev's theorem~\cite{Ch}; Hecke $L$-functions ($L(1,\chi)\ne0$, the functional equation, root numbers, orders at $s=0$); \cite[Ch.~IV]{Ta} and~\cite{Ru}; the conductor--discriminant formula, Gauss sums, Milgram's formula and Lucas's theorem; valuation rings; lattices over $\mathbb Z_p$, their multiplier rings and the Bruhat--Tits tree~\cite{Se}.
+\item \emph{Appendix~\ref{app:kopp} only:} \cite[Thm.~1.1]{Ko} (a preprint), modulus only.
+\end{itemize}
+
+\subsection*{Dependencies}
+Each main statement uses the following inputs, directly or through earlier statements. Here (6) is identity~(6) of~\cite{RW}, ``Shintani's formula'' means Shintani's product formula in Yamamoto's form, and ``Chebotarev'' means Chebotarev's theorem together with class field theory.
+\begin{itemize}
+\item Theorem~\ref{thm:local}: (6), only through Lemma~\ref{lem:column}.
+\item Theorem~\ref{thm:A}: (6) and Chebotarev, and Theorem~\ref{thm:DC} once, in the selection step. The restriction to rational ideles, the Galois form and the positivity above~$r$ do not use Theorem~\ref{thm:DC}.
+\item Theorem~\ref{thm:B}: (6), Theorem~\ref{thm:DC}, Shintani's formula and Chebotarev.
+\item Theorem~\ref{thm:C}: (6), the quadratic relation~\cite[(39)]{RW}, which rests on~\cite[(7)]{RW}, and Chebotarev.
+\item Theorems~\ref{thm:D} and~\ref{thm:G}: (6), Theorem~\ref{thm:DC} and Chebotarev.
+\item Theorem~\ref{thm:dict}: Theorem~\ref{thm:DC} and Shintani's formula.
+\item Theorem~\ref{thm:phase}: Shintani's formula and Shintani's evaluation at $s=0$~\cite{Sh76}.
+\item Theorem~\ref{thm:sqrtrec}: (6), Theorem~\ref{thm:DC} and Chebotarev; its clause on $U_A$ also uses~\eqref{eq:V}, hence Shintani's formula.
+\item Theorem~\ref{thm:st3}: (6), (I1), Theorem~\ref{thm:DC}, Shintani's formula, Rademacher's formula and Chebotarev.
+\item Theorem~\ref{thm:E}: (6), Theorem~\ref{thm:DC}, Shintani's formula and Chebotarev; in the open configuration also (I1) and Rademacher's formula.
+\item Theorem~\ref{thm:F}: (6), (I1), Theorem~\ref{thm:DC}, Shintani's formula, \cite{Sh76}, Rademacher's formula and Chebotarev; for $t$ odd also~\cite[(7)]{RW} at three families of pairs of labels, and for $f_\eta=1$ also~\cite[(36)]{RW} on the slice $\{2c\}\times B$.
+\end{itemize}
+
+\subsection*{What is new}
+The following are new.
+\begin{itemize}
+\item Part~A: Lemma~\ref{lem:FX} (a transport of the results of~\cite{RW}); Theorems~\ref{thm:DC} and~\ref{thm:sign}; the local theory of Section~\ref{sec:local}, beyond the classical facts on lattices and the tree; Lemmas~\ref{lem:dist}--\ref{lem:selector} and Theorem~\ref{thm:RL}; Theorems~\ref{thm:A}, \ref{thm:D} and~\ref{thm:G}; the indexing of Section~\ref{sec:h12}, which turns~\cite[Cor.~5.2.5(1)]{Ya08} into Proposition~\ref{prop:N}, and the reading of Shintani's two factors as the two place values of one datum; the assembly of Theorem~\ref{thm:C}.
+\item Part~B: Theorems~\ref{thm:dict}, \ref{thm:phase} and~\ref{thm:sqrtrec} and the assembly of Theorem~\ref{thm:E}; for (St3) in the open configuration, the application of Radchenko and Wheeler's contour method to the half step with the $A$-kernel, the square-class law and the order change; the root-law arguments of Section~\ref{sec:rootlaw}.
+\item Appendix~\ref{app:kopp}: the translation and case analysis.
 \end{itemize}
 
 \section*{Acknowledgments}

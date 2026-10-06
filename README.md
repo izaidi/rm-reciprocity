@@ -4,7 +4,7 @@ Imran Zaidi (Montréal, Québec, Canada), imran.zaidi@gmail.com. 6 October 2026.
 
 - Paper: [rm-reciprocity.pdf](rm-reciprocity.pdf) (58 pages)
 - LaTeX source: [source/](source/) (compiles with pdflatex; amsart)
-- SHA-256 of the PDF: `767cc0274ed1ebd43c3b7b9210b8e5828b4bf73cbb26776a07149794b9aa5ad8`
+- SHA-256 of the PDF: `50a97fa087f7ff12722643de11d4f5c5f4ee1417e3bb9399edff5c0f2fa165d7`
 
 ## Abstract
 
@@ -12,6 +12,6 @@ We prove a reciprocity law for the values of Faddeev's quantum dilogarithm at re
 
 ## Notes
 
-This work was developed with substantial assistance from AI systems (Anthropic's Claude and OpenAI's GPT-6); see Section 6 of the paper for how the argument has been checked. No specialist has yet reviewed it.
+This work was developed with substantial assistance from AI systems (Anthropic's Claude and OpenAI's GPT-6); see Section 5 of the paper for how the argument has been checked. No specialist has yet reviewed it.
 
 The text and source are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
